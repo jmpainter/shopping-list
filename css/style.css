@@ -1,0 +1,15 @@
+#main {
+	margin: 10rem 20rem;
+}
+#shopping-list {
+	margin: 20px;
+}
+#shopping-list>li {
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-top: 10px;
+}
+#shopping-list li ul li {
+	font-weight: normal;
+	text-indent: 10px;
+}
