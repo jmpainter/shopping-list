@@ -14,24 +14,25 @@ h1 {
 #item, #category, #add {
 	font-family: 'Bad Script', serif;
 	font-size: 1.1rem;
+	vertical-align: bottom;
 }
 #item {
-	border: 1px dotted #000000; 
+	border: 1px solid rgb(204, 204, 204);
 	outline:0; 
 	height:25px; 
 	width: 275px;
-	border-radius: 5px;
 	font-size: 1.1em;
 	font-family: 'Bad Script', serif;
 }
 #category {
 	-webkit-appearance: menulist-button;
+	appearance: menulist-button;
 	background-color: rgb(255, 255, 255);
 	border: 1px solid rgb(204, 204, 204);
 	color: rgb(85, 85, 85);
 	cursor: pointer;
 	height: 30px;
-	width: 200px;
+	width: 14rem;
 }
 #add{
 	height: 30px;

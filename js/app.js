@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+	$('#item').focus();
 	$('#add').click(function() {
 
 		if ($('#item').val().length > 0)
@@ -27,6 +29,9 @@ $(document).ready(function () {
 			$('delete').off('click');
 			$('.done').click(doneOnClick);	
 			$('.delete').click(deleteOnClick);
+
+			$('#item').val('');
+			$('#item').focus();
 		}
 	});
 
