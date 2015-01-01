@@ -9,16 +9,32 @@ h1 {
 }
 #input {
 	text-align: center;
-	margin-top: 20px;	
+	margin-top: 20px;
+}
+#item, #category, #add {
+	font-family: 'Bad Script', serif;
+	font-size: 1.1rem;
 }
 #item {
 	border: 1px dotted #000000; 
 	outline:0; 
 	height:25px; 
-	width: 275px; 	
+	width: 275px;
+	border-radius: 5px;
+	font-size: 1.1em;
+	font-family: 'Bad Script', serif;
 }
 #category {
-	font-size: 1.2rem;
+	-webkit-appearance: menulist-button;
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(204, 204, 204);
+	color: rgb(85, 85, 85);
+	cursor: pointer;
+	height: 30px;
+	width: 200px;
+}
+#add{
+	height: 30px;
 }
 #main {
 	margin: 30px 30rem;
