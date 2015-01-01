@@ -1,7 +1,7 @@
 body {
 	font-family: 'Bad Script', serif;
 	color: #494949;
-	background: url("../images/retina_wood.png") #fff repeat fixed; 	
+	background: url("../images/retina_wood.png") #ead5b5 repeat fixed; 	
 }
 h1 {
 	font-size: 3.5rem;
@@ -10,7 +10,7 @@ h1 {
 }
 #page {
 	text-align: center;
-	background: url("../images/textured_paper.png") #fff repeat fixed;
+	background: url("../images/textured_paper.png") #edebe2 repeat fixed;
 	width: 47%;
 	margin: 2rem auto;
 	border: 1px solid #bcbcbc;
