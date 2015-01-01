@@ -22,7 +22,6 @@ h1 {
 	border: 1px solid;
 }
 #heading {
-	background: url("../images/textured_paper_blue.png") #d5f5f9 repeat fixed;
 	border-bottom: 1px solid #bcbcbc;
 	padding: 2rem;
 }
@@ -30,6 +29,7 @@ h1 {
 	font-family: 'Bad Script', serif;
 	font-size: 1.1rem;
 	vertical-align: bottom;
+	/*background-color: #eae7dd;*/
 }
 #item {
 	border: 1px solid rgb(204, 204, 204);
