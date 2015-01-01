@@ -9,7 +9,16 @@ h1 {
 }
 #input {
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 20px;	
+}
+#item {
+	border: 1px dotted #000000; 
+	outline:0; 
+	height:25px; 
+	width: 275px; 	
+}
+#category {
+	font-size: 1.2rem;
 }
 #main {
 	margin: 30px 30rem;
