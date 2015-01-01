@@ -2,16 +2,20 @@
 <html lang="en">
 <head>
 	<link rel="stylesheet" href="css/reset.css">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>	
 	<script src="js/app.js"></script>	
 	<meta charset="UTF-8">
 	<title>Shopping List</title>
 </head>
 <body>
-	<header></header>
-	<div id="main">
-		<input id="item" type="text" value="Enter your item here">
+	<header>
+		<h1>Shopping List</h1>
+	</header>
+	<section id="input">
+		<input id="item" type="text">
 		<select id="category">
 			<option value="beverages">Beverages</option>
 			<option value="bread">Bread/Bakery</option>
@@ -27,18 +31,20 @@
 			<option value="other">Other</option>
 		</select>
 		<button id="add-button" value="add">Add</button>
+	</section>
+	<div id="main">
 		<ul id="shopping-list">
 			<li id="beverages">Beverages
 				<ul>
-					<li>Orange Juice<button class="delete">Delete</button><button class="done">Done</button></li>
-					<li>Mineral Water<button class="delete">Delete</button><button class="done">Done</button></li>
+					<li>Orange Juice<a class="fa fa-check done"></a><a class="fa fa-close delete"></a></li>
+					<li>Mineral Water<a class="fa fa-check done"></a><a class="fa fa-close delete"></a></li>
 				</ul>
 			</li>
 			<li id="dairy">Dairy
 				<ul>
-					<li>Cheese<button class="delete">Delete</button><button class="done">Done</button></li>
-					<li>Milk<button class="delete">Delete</button><button class="done">Done</button></li>
-					<li>Yogurt<button class="delete">Delete</button><button class="done">Done</button></li>
+					<li>Cheese<a class="fa fa-check done"></a><a class="fa fa-close delete"></a></li>
+					<li>Milk<a class="fa fa-check done"></a><a class="fa fa-close delete"></a></li>
+					<li>Yogurt<a class="fa fa-check done"></a><a class="fa fa-close delete"></a></li>
 				</ul>
 			</li>
 		</ul>

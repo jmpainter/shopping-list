@@ -1,15 +1,36 @@
+body {
+	background-color: #fff;
+	font-family: 'Bad Script', serif;
+}
+h1 {
+	font-size: 3.5rem;
+	text-align: center;
+	margin-top: 30px;
+}
+#input {
+	text-align: center;
+	margin-top: 20px;
+}
 #main {
-	margin: 10rem 20rem;
+	margin: 30px 30rem;
 }
 #shopping-list {
-	margin: 20px;
+	margin: 10px 0 20px;
+	line-height: 2.1rem;
 }
-#shopping-list>li {
-	font-weight: bold;
-	font-size: 1.5em;
-	margin-top: 10px;
+#shopping-list > li {
+	font-size: 2rem;
+	margin-bottom: 10px;
 }
-#shopping-list li ul li {
-	font-weight: normal;
-	text-indent: 10px;
+#shopping-list ul li {
+	margin-left: 30px;
+	font-size: 1.2rem;
+}
+.done, .delete {
+	color: #000;
+	text-decoration: none;
+	font-size: .8rem;
+	display: inline-block;
+	margin-left: 10px;
+	cursor: pointer;
 }

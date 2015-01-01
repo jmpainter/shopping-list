@@ -9,7 +9,7 @@ $(document).ready(function () {
 
 				//if the category is found, add the item to the category's unordered list
 				$(this).children().append('<li>' + $('#item').val() 
-				+ '<button class="delete">Delete</button><button class="done">Done</button></li>');
+				+ '<a class="fa fa-check done"></a><a class="fa fa-close delete"></a></li>');
 				isFound = true;
 			}
 		});	  
@@ -18,10 +18,13 @@ $(document).ready(function () {
 		if (isFound == false) {
 			$('#shopping-list').append('<li id="' + $('#category').val() + '">'
 			 + $('#category option:selected').html() + '<ul><li>' + $('#item').val() 
-			 + '<button class="delete">Delete</button><button class="done">Done</button></li></ul></li>');		
+			 + '<a class="fa fa-check done"></a><a class="fa fa-close delete"></a></li></ul></li>');		
 		}
-		$(document.body).on('click', '.delete', deleteOnClick);
-		$(document.body).on('click', '.done', doneOnClick);
+		//try to unbind the envent first to prevent multiple event handlers
+		$('.done').off('click');
+		$('delete').off('click');
+		$('.done').click(doneOnClick);	
+		$('.delete').click(deleteOnClick);
 	});
 
 	function deleteOnClick (){
@@ -35,11 +38,13 @@ $(document).ready(function () {
 	}
 
 	function doneOnClick (){
-		console.log($(this).closest('li').css("text-decoration"));
+		console.log('doneOnClick called, current text-decoration state: ' + $(this).closest('li').css("text-decoration"));
 		if ($(this).closest('li').css("text-decoration") == "none") {
+			console.log('setting state to line-through');
 			$(this).closest('li').css("text-decoration", "line-through");
 		}
 		else {
+			console.log('setting state to none');
 			$(this).closest('li').css("text-decoration", "none");			
 		}
 	}	
