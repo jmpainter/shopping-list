@@ -11,10 +11,10 @@ h1 {
 #page {
 	text-align: center;
 	background: url("../images/textured_paper.png") #edebe2 repeat fixed;
-	width: 47%;
 	margin: 2rem auto;
 	border: 1px solid #bcbcbc;
 	box-shadow: 4px 4px 3px #7f7f7f;
+	width: 640px;
 }
 #input {
 	text-align: center;
