@@ -1,20 +1,15 @@
 
 body {
-	font-family: 'Bad Script', serif;
-	color: #494949;
 	background: url("../images/retina_wood.png") #ead5b5 repeat fixed;
 }
 h1 {
-	font-size: 3.5rem;
+	font-size: 2.1rem;
 	text-align: center;
-	padding: 2rem 0;
+	padding: .7rem 0 1.7rem;
 }
 #page {
 	text-align: center;
-	background: url("../images/textured_paper.png") #edebe2 repeat fixed;
 	margin: 2rem auto;
-	border: 1px solid #bcbcbc;
-	box-shadow: 4px 4px 3px #7f7f7f;
 	width: 610px;
 }
 #input {
@@ -22,11 +17,15 @@ h1 {
 	margin: 20px 0;
 }
 #heading {
-	border-bottom: 1px solid #bcbcbc;
+	background-color: #cbf2ff;
+	font-family: 'Roboto', sans-serif;
+	border: 1px solid #cbf2ff;
 	padding: 2rem;
+	margin-bottom: 30px;
+	border: 1px solid #bcbcbc;
 }
 #item, #category, #add {
-	font-family: 'Bad Script', serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1.1rem;
 	vertical-align: bottom;
 	/*background-color: #eae7dd;*/
@@ -36,7 +35,6 @@ h1 {
 	height:25px; 
 	width: 220px;
 	font-size: 1.1em;
-	font-family: 'Bad Script', serif;
 }
 #item :focus {
 	color: red;
@@ -55,8 +53,12 @@ h1 {
 	height: 30px;
 }
 #main {
+	font-family: 'Bad Script', serif;
+	color: #494949;	
 	text-align: left;
 	padding: 2rem;
+	background: url("../images/textured_paper.png") #edebe2 repeat fixed;	
+	box-shadow: 4px 4px 3px #7f7f7f;	
 }
 #shopping-list {
 	margin: 10px 0 20px;
