@@ -2,7 +2,10 @@ $(document).ready(function () {
 
 	$('#item').focus();
 	$('#add').click(function() {
+		addItem();
+	});
 
+	function addItem() {
 		if ($('#item').val().length > 0)
 		{
 			var isFound = false;
@@ -32,8 +35,12 @@ $(document).ready(function () {
 
 			$('#item').val('');
 			$('#item').focus();
+			$('#errormsg').text('');
 		}
-	});
+		else {
+			$('#errormsg').text('Please enter an item');
+		}		
+	}
 
 	function deleteOnClick (){
 		console.log($(this).closest('li').siblings().length);
@@ -56,7 +63,11 @@ $(document).ready(function () {
 			$(this).closest('li').css("text-decoration", "none");			
 		}
 	}	
-
+	$(document).keydown(function(event) {
+		if (event.keyCode == 10 || event.keyCode == 13) {
+			addItem();
+		}
+	});
 
 	$('.delete').click(deleteOnClick);
 	$('.done').click(doneOnClick);
