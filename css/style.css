@@ -5,6 +5,7 @@ body {
 h1 {
 	font-size: 2rem;
 	text-align: center;
+	font-weight: 300;
 	padding: .7rem 0 1.7rem;
 }
 #page {
@@ -28,9 +29,10 @@ h1 {
 }
 #item, #category, #add {
 	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
 	font-size: 1.1rem;
 	vertical-align: bottom;
-	/*background-color: #eae7dd;*/
+	color: #3d3d3d;
 }
 #item {
 	border: 1px solid rgb(204, 204, 204);
@@ -51,7 +53,6 @@ h1 {
 	appearance: menulist-button;
 	background-color: rgb(255, 255, 255);
 	border: 1px solid rgb(204, 204, 204);
-	color: rgb(85, 85, 85);
 	cursor: pointer;
 	height: 30px;
 	width: 14rem;
