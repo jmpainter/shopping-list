@@ -21,7 +21,7 @@ $(document).ready(function () {
 				}
 			});	  
 
-			//if the category isn't found, add it and the item in it's unoreded list
+			//if the category isn't found, add it and the item in it's unordeded list
 			if (isFound == false) {
 				$('#shopping-list').append('<li id="' + $('#category').val() + '">'
 				 + $('#category option:selected').html() + '<ul><li>' + $('#item').val() 
